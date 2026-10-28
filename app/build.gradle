@@ -9,7 +9,7 @@ android {
     buildToolsVersion '35.0.0'
     defaultConfig {
         applicationId 'io.github.miam1ku.mibandoplusbridge'
-        minSdk 36
+        minSdk 35
         targetSdk 36
         versionCode 118
         versionName '1.8.7'
