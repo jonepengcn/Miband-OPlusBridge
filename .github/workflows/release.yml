@@ -63,8 +63,8 @@ jobs:
             printf '%s\n' "$GITHUB_REF_NAME" > release-notes.md
           fi
       - name: Publish GitHub Release
-        if: startsWith(github.ref, 'refs/tags/')
         id: source_release
+        if: startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@v2
         with:
           body_path: release-notes.md
